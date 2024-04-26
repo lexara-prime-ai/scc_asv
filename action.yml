@@ -1,0 +1,24 @@
+# The <action.yml> file signals that the repository will contain/contains an action.
+name: "Automated Semantic Versioning"
+description: "Creates new a semantic version string based on the [commit message]"
+author: "Skyloom Cloud Computing"
+runs:
+  using: "docker"
+  image:
+    "Dockerfile" # You can specify any other Docker image.
+    # The action will build the image using the supplied Dockerfile in this case.
+
+# The following inputs are [optional]
+# They will be referenced as INPUT_<input name> e.g INPUT_MASTER_BRANCH/INITIAL_VERSION
+inputs:
+  master_branch:
+    description: "The repository's master branch"
+    required: false
+    default: "master"
+  initial_version:
+    description: "The first version defaults to 1.0.0"
+    required: false
+    default: "1.0.0"
+outputs:
+  version-string:
+    description: "Generated version number"
