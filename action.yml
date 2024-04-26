@@ -21,4 +21,4 @@ inputs:
     default: "1.0.0"
 outputs:
   version-string:
-    description: "Generated version number"
+    description: "Generated version number" 
