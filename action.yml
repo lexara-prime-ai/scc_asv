@@ -8,6 +8,7 @@ runs:
     "Dockerfile" # You can specify any other Docker image.
     # The action will build the image using the supplied Dockerfile in this case.
 
+
 # The following inputs are [optional]
 # They will be referenced as INPUT_<input name> e.g INPUT_MASTER_BRANCH/INITIAL_VERSION
 inputs:
